@@ -1,0 +1,4 @@
+interface:
+  display_name: "Word 保真转 LaTeX"
+  short_description: "将Word稿件保真转入现有LaTeX模板，核对公式、图表并记录差异"
+

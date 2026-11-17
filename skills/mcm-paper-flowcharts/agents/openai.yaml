@@ -1,0 +1,4 @@
+interface:
+  display_name: "可编辑论文流程图"
+  short_description: "将建模逻辑整理成可编辑draw.io流程图，核对分支、反馈与版面"
+

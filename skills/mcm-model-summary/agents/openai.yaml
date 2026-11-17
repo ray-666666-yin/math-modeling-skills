@@ -1,0 +1,4 @@
+interface:
+  display_name: "模型公式与参数汇总"
+  short_description: "从现有正文提取模型公式与符号说明，保持来源可核对并适配 LaTeX 排版"
+  default_prompt: "使用 $mcm-model-summary，汇总这部分已有模型，生成带用途说明的 LaTeX 公式组和符号说明，保留原推导并标记缺项。"

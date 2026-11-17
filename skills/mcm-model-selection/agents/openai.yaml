@@ -1,0 +1,4 @@
+interface:
+  display_name: "数学建模模型选择"
+  short_description: "根据问题结构与数据条件选模型，说明适用范围、取舍和验证办法"
+  default_prompt: "使用 $mcm-model-selection，分析这道题的目标、约束和数据条件，给出逐问模型建议、必要备选及验证方案。"

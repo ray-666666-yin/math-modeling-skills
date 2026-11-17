@@ -1,0 +1,4 @@
+interface:
+  display_name: "数学建模模型改进"
+  short_description: "把现有方案的具体不足转化为可实施改进，并设计基线、消融与失败检查"
+  default_prompt: "使用 $mcm-model-innovation，找出现有方案最值得改进的部分，给出数学定义、对照设计和失败时的回退方案。"

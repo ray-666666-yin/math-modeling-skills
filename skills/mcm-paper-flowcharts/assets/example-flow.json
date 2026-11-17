@@ -1,0 +1,105 @@
+{
+  "title": "通用流程演示（非实际研究结果）",
+  "width": 980,
+  "height": 700,
+  "font": "sans-serif",
+  "nodes": [
+    {
+      "id": "input",
+      "label": "输入与约束",
+      "x": 390,
+      "y": 40,
+      "width": 200,
+      "height": 65,
+      "role": "input"
+    },
+    {
+      "id": "model-a",
+      "label": "子模型 A",
+      "x": 130,
+      "y": 170,
+      "width": 230,
+      "height": 70,
+      "role": "model"
+    },
+    {
+      "id": "model-b",
+      "label": "子模型 B",
+      "x": 620,
+      "y": 170,
+      "width": 230,
+      "height": 70,
+      "role": "model"
+    },
+    {
+      "id": "solve",
+      "label": "联合计算",
+      "x": 390,
+      "y": 320,
+      "width": 200,
+      "height": 70,
+      "role": "compute"
+    },
+    {
+      "id": "check",
+      "label": "满足检查条件？",
+      "x": 380,
+      "y": 450,
+      "width": 220,
+      "height": 100,
+      "role": "decision"
+    },
+    {
+      "id": "output",
+      "label": "记录结果与依据",
+      "x": 390,
+      "y": 610,
+      "width": 200,
+      "height": 65,
+      "role": "output"
+    }
+  ],
+  "edges": [
+    {
+      "source": "input",
+      "target": "model-a"
+    },
+    {
+      "source": "input",
+      "target": "model-b"
+    },
+    {
+      "source": "model-a",
+      "target": "solve"
+    },
+    {
+      "source": "model-b",
+      "target": "solve"
+    },
+    {
+      "source": "solve",
+      "target": "check"
+    },
+    {
+      "source": "check",
+      "target": "output",
+      "label": "是"
+    },
+    {
+      "source": "check",
+      "target": "solve",
+      "label": "否：调整配置",
+      "dashed": true,
+      "points": [
+        {
+          "x": 900,
+          "y": 500
+        },
+        {
+          "x": 900,
+          "y": 355
+        }
+      ]
+    }
+  ]
+}
